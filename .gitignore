@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data files (large files we don't want to commit)
+data/raw/*.zip
+data/raw/*.csv
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.json
+!requirements.txt
+
+# Model weights (keep best.pt, ignore others)
+weights/*.pt
+!weights/best.pt
+
+# Outputs and results
+outputs/*
+!outputs/.gitkeep
+predictions/*
+runs/*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Kaggle credentials
+kaggle.json
+
+# Environment variables
+.env
+.env.local
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
